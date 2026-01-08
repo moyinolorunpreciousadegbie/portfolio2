@@ -1,0 +1,202 @@
+<meta charset="UTF-8">
+<h1>Moyinolorun Precious Adegbie - Interactive Resume</h1>
+
+<p>A modern, interactive resume website built with Flask, featuring animated skill bars, interactive Plotly charts, and a beautiful glassmorphism design.</p>
+
+<h2>🚀 Features</h2>
+
+<ul>
+<li><strong>Modern UI Design</strong>: Glassmorphism effects, smooth animations, and responsive layout</li>
+<li><strong>Dark/Light Mode</strong>: Toggle between themes for comfortable viewing</li>
+<li><strong>Interactive Charts</strong>: Plotly-powered data visualizations for research projects</li>
+<li><strong>Tabbed Navigation</strong>: Easy navigation between About, Skills, Experience, Projects, Education, and Contact sections</li>
+<li><strong>Responsive Design</strong>: Works seamlessly on desktop, tablet, and mobile devices</li>
+</ul>
+
+<h2>📋 Prerequisites</h2>
+
+<ul>
+<li>Python 3.8 or higher</li>
+<li>pip (Python package manager)</li>
+<li>Git</li>
+</ul>
+
+<h2>🛠️ Local Setup &amp; Configuration</h2>
+
+<h3>1. Clone the Repository</h3>
+
+<p><code>bash
+git clone https://github.com/&lt;YOUR_USERNAME&gt;/&lt;YOUR_REPO_NAME&gt;.git
+cd &lt;YOUR_REPO_NAME&gt;
+</code></p>
+
+<h3>2. Create a Virtual Environment (Recommended)</h3>
+
+<p>```bash</p>
+
+<h1>Create virtual environment</h1>
+
+<p>python3 -m venv venv</p>
+
+<h1>Activate virtual environment</h1>
+
+<h1>On macOS/Linux:</h1>
+
+<p>source venv/bin/activate</p>
+
+<h1>On Windows:</h1>
+
+<p>venv\Scripts\activate
+```</p>
+
+<h3>3. Install Dependencies</h3>
+
+<p><code>bash
+pip install -r requirements.txt
+</code></p>
+
+<h3>4. Run the Application</h3>
+
+<p><code>bash
+python app.py
+</code></p>
+
+<p>The application will start on <code>http://127.0.0.1:5000/</code></p>
+
+<h2>📁 Project Structure</h2>
+
+<p><code>
+precious/
+├── app.py                 # Flask application entry point
+├── requirements.txt       # Python dependencies
+├── README.md             # This file
+├── static/
+│   ├── css/
+│   │   └── style.css     # Main stylesheet
+│   └── js/
+│       └── main.js       # JavaScript functionality
+└── templates/
+    └── index.html        # Main HTML template
+</code></p>
+
+<h2>🚀 Deploying to GitHub</h2>
+
+<h3>1. Create a New Repository on GitHub</h3>
+
+<ol>
+<li>Go to <a href="https://github.com">github.com</a> and sign in</li>
+<li>Click the <strong>+</strong> icon in the top right corner</li>
+<li>Select <strong>New repository</strong></li>
+<li>Enter a repository name (e.g., <code>interactive-resume</code>)</li>
+<li>Choose <strong>Public</strong> or <strong>Private</strong></li>
+<li>Do NOT initialize with README (we already have one)</li>
+<li>Click <strong>Create repository</strong></li>
+</ol>
+
+<h3>2. Initialize Git and Push to GitHub</h3>
+
+<p>```bash</p>
+
+<h1>Navigate to the project directory</h1>
+
+<p>cd /path/to/precious</p>
+
+<h1>Initialize git repository (if not already initialized)</h1>
+
+<p>git init</p>
+
+<h1>Add all files to staging</h1>
+
+<p>git add .</p>
+
+<h1>Create initial commit</h1>
+
+<p>git commit -m "Initial commit: Interactive resume website"</p>
+
+<h1>Add the remote repository (replace with your GitHub URL)</h1>
+
+<p>git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git</p>
+
+<h1>Push to GitHub</h1>
+
+<p>git branch -M main
+git push -u origin main
+```</p>
+
+<h3>3. Verify Upload</h3>
+
+<p>Visit your repository at <code>https://github.com/&lt;YOUR_USERNAME&gt;/&lt;YOUR_REPO_NAME&gt;</code> to confirm all files were uploaded successfully.</p>
+
+<h2>🔧 Configuration Options</h2>
+
+<h3>Changing the Port</h3>
+
+<p>Edit <code>app.py</code> and modify the port number:</p>
+
+<p><code>python
+if __name__ == "__main__":
+    app.run(debug=True, port=8080)  # Change 5000 to your preferred port
+</code></p>
+
+<h3>Disabling Debug Mode for Production</h3>
+
+<p><code>python
+if __name__ == "__main__":
+    app.run(debug=False, port=5000)
+</code></p>
+
+<h3>Environment Variables (Optional)</h3>
+
+<p>For production deployment, you can use environment variables:</p>
+
+<p><code>bash
+export FLASK_ENV=production
+export FLASK_APP=app.py
+flask run --host=0.0.0.0 --port=5000
+</code></p>
+
+<h2>📝 Customization</h2>
+
+<h3>Updating Personal Information</h3>
+
+<ol>
+<li><p>Edit <code>templates/index.html</code> to update:</p>
+
+<ul>
+<li>Name and title in the header</li>
+<li>About section content</li>
+<li>Skills and percentages</li>
+<li>Experience timeline</li>
+<li>Education details</li>
+<li>Contact information</li>
+</ul></li>
+<li><p>Update footer social links with your actual profiles:</p>
+
+<ul>
+<li>LinkedIn URL</li>
+<li>GitHub URL</li>
+<li>Email address</li>
+</ul></li>
+</ol>
+
+<h3>Modifying Styles</h3>
+
+<p>Edit <code>static/css/style.css</code> to customize:
+- Color schemes (CSS variables in <code>:root</code>)
+- Fonts
+- Spacing
+- Animations</p>
+
+<h2>📄 License</h2>
+
+<p>This project is open source and available under the <a href="LICENSE">MIT License</a>.</p>
+
+<h2>👤 Author</h2>
+
+<p><strong>Moyinolorun Precious Adegbie</strong>
+- Geologist &amp; Data Scientist
+- Energy Industry Specialist</p>
+
+<hr />
+
+<p><em>Built with ❤️ using Flask and modern web technologies</em></p>
